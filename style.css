@@ -1,0 +1,74 @@
+html {
+font-size: 1rem;
+font-family: 'Roboto', sans-serif;
+}
+
+@include media-breakpoint-up(sm) {
+html {
+font-size: 1.2rem;
+}
+}
+
+@include media-breakpoint-up(md) {
+html {
+font-size: 1.4rem;
+}
+}
+
+@include media-breakpoint-up(lg) {
+html {
+font-size: 1.6rem;
+}
+}
+.container
+{
+	color:color: #49274A;
+}
+.a{
+	color: black;
+	text-decoration: none;
+
+}
+h1, h5, p,{
+	color:black;
+}
+footer{
+	background-color: #ffcdd2;
+	color:#3e2723;}
+
+.btn, button{
+	background-color: #d8bfd8;
+	color: black;
+}
+kbd{
+	background-color: #905b74;
+}
+.clearfix img{
+	max-width: 150px;
+	height: auto; 
+}
+.img-fluid{
+	width: 100% \9;
+	max-height: 760px;
+}
+.main_newslater{
+	display:flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	height: 50%;
+}
+.card-body{
+	
+	max-width: 100%;
+	background-color: #ffcdd2;
+}
+.main_appointment{
+	display:flex;
+	justify-content: center;
+}
+.form-check-input {
+	margin: 3px;
+}
+.col-sm-4{
+	margin-bottom :8px;	
+}
