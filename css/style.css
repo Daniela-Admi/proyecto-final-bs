@@ -1,0 +1,180 @@
+/* general background style*/
+.form-row, footer, .btn, .card-body, .card-body, .card-text, .formulario-contacto, .mapa-contacto
+{
+	background-color: #d8bfd8; /*Thistle*/	
+}
+kbd{
+	background-color: #905b74; /*purple*/
+}
+/*icons*/
+i{	
+  font-size: 28px;
+  padding: 10px;
+  color:#c13278; /*shadow pink*/
+}
+/*especifications for buttons*/
+button{   
+background-color: white;
+color: #905b74; /*purple*/
+border: 1px solid black;
+padding: 3px;
+}
+
+/*the navigation bar and logo*/ 
+#navigation_bar a{    
+	color:#c13278; /*shadow pink*/
+	text-decoration: none;
+	font-size: 23px
+	padding: 8px; 
+}   
+a:hover {
+color:#905b74;
+}                         
+.header_nav{  
+    justify-content: flex-end;
+	background-color: #d8bfd8;
+}         
+.nav-item{
+   size: 95px;                                                                          
+}
+.navbar{
+	text-decoration: none;
+}
+
+/*main index carousel*/
+.carousel-item {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.clearfix img{
+	max-width: 150px;
+	height: auto; 
+}
+.img-fluid{
+	width: 100% \9;
+	max-height: 760px;
+}
+.card-up{
+	background-color:#905b74;
+}
+.avatar img {
+  max-width: 250px; 
+}
+/*newslater - suscribe*/
+.aside_newslater{
+	display:flex;
+	margin-bottom: 10px;
+	max-width: 100%;
+	margin: 10px;
+}
+/*Cards*/
+.card-body, .card-text{
+	max-width: 100%;
+	margin: 5px;
+	padding: 10px;
+}
+h3, h2, h1, p, iframe{ 
+	margin:10px; 
+}
+/*this is the appointment section*/
+.needs-validation{
+	padding: 15px;
+
+}
+.turnos{
+	max-height: auto;
+	max-width: auto;
+
+}
+.input{
+   padding: 3em;
+} 
+
+.label{
+	margin-left: 10px;	
+}
+
+.form-row{
+	border: solid 15px #d8bfd8;
+	max-width: 300px;
+}
+
+/*contact us*/
+.formulario-contacto, .mapa-contacto{
+
+	max-width: 450px;
+    max-height: 650px;
+    padding: 15px;
+    margin: 10px;
+}
+.md-form{
+	padding: 10px 25px 10px 25px;
+}
+/*sevices*/
+.form-check-input {
+	margin: 3px;
+}
+.col-sm-4 .col-sm-5{
+	margin-bottom :12px;	
+}
+.fab{
+	size: 35px;
+}
+
+
+/* here is the footer*/
+.footer{
+   text-align: center;
+   padding: 15px; 
+}
+/*ABOUT US*/
+.quienessomos-text{
+	padding: 5px;
+}
+
+@media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }
+html {
+font-size: 1rem;
+font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 360px) {
+.aside_newslater{  
+height: auto;
+max-width: 100%;
+margin: 40px;
+
+} 
+.quienessomos-image img{
+width: 100% ;
+height: auto;
+}
+.mapa-contacto iframe{
+	width: 95%;
+	height: auto;
+}
+}
+
+@include media-breakpoint-up(sm) {
+html {
+font-size: 1.2rem;
+}
+}
+@include media-breakpoint-up(md) {
+html {
+font-size: 1.4rem;
+}
+}
+@include media-breakpoint-up(lg) {
+html {
+font-size: 1.6rem;
+}
+}

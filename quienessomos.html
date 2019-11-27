@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Salud & Belleza - Danielle Pomés</title>
-  <meta charset="utf-8">
+  <title>Quienes Somos/Salud & Belleza/Danielle Pomés</title>
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="pagina de belleza tratamientos esteticos de salud en resistencia chaco argentina">
   <meta name="keywords"  content="BELLEZA, SALUD, Danielle Pomés, POMES, ESTETICA, TRATAMIENTOS, BODY-UP, TURNOS, SERVICIO, ELECTRODOS, RADIOFRECUENCIA, CEJAS, pestañas">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="saludybelleza.js"></script>
-  
+  <script src="js/saludybelleza.js"></script>
 </head>
+<!--Body-->
 <body>
-     <!--Body-->
- <div class="container">
-    <header>
-   <!--Main Navigation-->
-    <div class="header_nav">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!--Main logo-->
-      <a class="navbar-brand" href="index.html"><img src="image/logo1.png" class="rounded" alt="Logo no encontrado"></a> 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!--Header Navigation-->
+  <header id="navigation_bar">
+  <div class="header_nav">
+      <nav class="navbar navbar-expand-lg bg-light">
+       <!--Header logo-->
+      <a class="navbar-brand" href="index.html"><img src="image/logo1.png" class="rounded" alt="Logo no encontrado" img-fluid></a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="servicios.html"><kbd>Servicios</kbd><span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="servicios.html"><strong>SERVICIOS</strong><span class="sr-only">(current)</span></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="turnos.html"><kbd>Turnos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="turnos.html"><strong>TURNOS</strong></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="quienessomos.html"><kbd>Quienes Somos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="quienessomos.html"><strong>QUIENES SOMOS</strong></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="contactanos.html"><kbd>Contactanos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="contactanos.html"><strong>CONTACTANOS</strong></a>
           </li>
         </ul>
-      </div>
+             <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="facebook" href="https://www.facebook.com/S.BDaniellePomes/"target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li id="nav-item">
+                   <a class="instagram" href="https://www.instagram.com/sb.daniellepomes/"target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
     </nav>
   </div>
 </header>
-<div class="card align-content-xl-start">
-  <div class="card-header"><img src="image/noso.png" class="mr-3 img-fluid" alt="sobrenosotros imagen" ></div>
-  <div class="card-body">
-    <h5 class="card-title">Quienes Somos</h5>
-    <p class="card-text"><abbr title="Salud & Belleza - Danielle Pomés ">S-B</abbr> surge de la pasión por el cuidado personal.
-			Nuestra filosofia: es satisfacer tus necesidades, ofreciéndote soluciones estéticas tanto a molestias faciales como corporales teniendo en cuenta tu ritmo actual de vida, con planes estética especialmente diseñados para lograr cambios naturales, sin cirugías.
-
-			Cada persona desea en algún momento alcanzar una imagen agradable de sí mismo y poder disfrutar de su cuerpo con mayor seguridad para vivir con plenitud.
-			Esa necesidad de verse mejor es el primer paso para lograr cambios y transformar nuestra imagen.
-
-			El compromiso con nuestros clientes es contribuir a alcanzar la imagen que desean, brindando calidad y profesionalidad en la atención.
-			Siempre es posible verse y sentirse mejor con nuestra apariencia única.
-			Una consulta es el primer paso para empezar a lograr verte y sentirte como realmente queres.</p>
+<!--End of the main navbar-->
+<!--Main about us content-->
+<div class="container-fluid" data-toggle="collapse">
+  <div class="card-group">
+    <div class="col-md-4.5">
+      <div class="card">
+        <div class="quienessomos-image">
+         <img src="image/noso.jpg" alt="sobre-nosotros imagen no encontrada" img-fluid>
+       </div>
+     </div>
+   </div>
+   <div class="col-md-7">
+    <div class="card">
+     <div class="quienessomos-text">
+     <h2>Quienes Somos</h2>
+     <p><i class="fas fa-quote-left"></i><strong>Salud & Belleza - Danielle Pomés</strong> Surge de la pasión por el cuidado personal. 
+     Cada persona desea en algún momento alcanzar una imagen agradable de sí mismo y poder disfrutar de su cuerpo con mayor seguridad para vivir con plenitud.</p>
+     Esa necesidad de verse mejor es el primer paso para lograr cambios y transformar nuestra imagen.</p>
+     <p><i class="fas fa-quote-left"></i>Nuestra filosofía: es satisfacer tus necesidades, ofreciéndote soluciones estéticas tanto a molestias faciales como corporales teniendo en cuenta tu ritmo actual de vida, con planes estéticos especialmente diseñados para lograr cambios naturales, sin cirugías.</p>
+     <p><i class="fas fa-quote-left"></i>Valor: Es traerte lo último en belleza corporal a precios accesibles y hacerte más cómoda la tarea de planificar tu agenda queremos que te sientas bella pero también cómoda por eso ofrecemos un ambiente agradable donde puedas expresar todas tus inquietudes.
+     El compromiso con nuestros clientes es contribuir a alcanzar la imagen que desean, brindando calidad y profesionalidad en la atención.
+     Siempre es posible verse y sentirse mejor con “nuestra apariencia única”.</p>
+     </div>
+    </div>
+   </div>
   </div>
+ </div>
 </div>
 
-	
-		
-			
 <!--footer-->
 <footer>
-  <div class="footer-copyright text-center py-3">© 2019 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> SB-DaniellePomes.com</a>
+  <div class="footer">
+    <i class="fas fa-map-marker-alt"> </i> Honduras 1048 Resistencia Chaco Argentina
+    <i class="fas fa-phone-square-alt"></i>+54 9 362 474-3621
   </div>
 </footer>
 </body>  

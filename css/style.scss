@@ -1,0 +1,24 @@
+/* define variables for the primary colors */
+$primary_1: #94618E; /*GRAPE*/
+$primary_2: #49274A; /* EGGPLANT*/
+$primary_3: #F4DECB; /*SAND*/
+$primary_4: #F8EEE7; /*SHELL*/
+$primary_5: white;
+$primary_6: black; /* or better use instead EGGPLANT*/
+/* use the variables */
+. {
+  background-color: $primary_1;
+}
+
+. {
+  background-color: $primary_2;
+}
+.  {
+  background-color: $primary_3;
+}
+.  {
+  background-color: $primary_4;
+}
+.   {
+  background-color: $primary_5;
+}

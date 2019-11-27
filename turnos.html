@@ -1,195 +1,189 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Salud & Belleza - Danielle Pomés</title>
+  <title>Turnos/Salud & Belleza/Danielle Pomés</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="pagina de belleza tratamientos esteticos de salud en resistencia chaco argentina">
   <meta name="keywords"  content="BELLEZA, SALUD, Danielle Pomés, POMES, ESTETICA, TRATAMIENTOS, BODY-UP, TURNOS, SERVICIO, ELECTRODOS, RADIOFRECUENCIA, CEJAS, pestañas">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="saludybelleza.js"></script>
+  <script src="js/saludybelleza.js"></script>
 </head>
+<!--Body-->
 <body>
-     <!--Body-->
- <div class="container">
-    <header>
-   <!--Main Navigation-->
-    <div class="header_nav">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-       <!--Main logo-->
-      <a class="navbar-brand" href="index.html"><img src="image/logo1.png" class="rounded" alt="Logo no encontrado"></a> 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!--Header Navigation-->
+  <header id="navigation_bar">
+  <div class="header_nav">
+      <nav class="navbar navbar-expand-lg bg-light">
+       <!--Header logo-->
+      <a class="navbar-brand" href="index.html"><img src="image/logo1.png" alt="Logo no encontrado" img-fluid></a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="servicios.html"><kbd>Servicios</kbd><span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="servicios.html"><strong>SERVICIOS</strong><span class="sr-only">(current)</span></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="turnos.html"><kbd>Turnos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="turnos.html"><strong>TURNOS</strong></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="quienessomos.html"><kbd>Quienes Somos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="quienessomos.html"><strong>QUIENES SOMOS</strong></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="contactanos.html"><kbd>Contactanos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="contactanos.html"><strong>CONTACTANOS</strong></a>
           </li>
         </ul>
-      </div>
+             <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="facebook" href="https://www.facebook.com/S.BDaniellePomes/"target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li id="nav-item">
+                   <a class="instagram" href="https://www.instagram.com/sb.daniellepomes/"target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
     </nav>
   </div>
-</header>
+</header><!--End of the main navbar-->
 <!--make an appointment-->
-<div class="main_appointment">  
-  <div class="jumbotron jumbotron-fluid">
-    <h2> Turnos </h2>
-    <form class="needs-validation" novalidate>
-    <div class="form-row">
-        <div class="col-md-5 mb-3 md-form">
-        <label for="validationCustom012">Nombre</label>
-        <input type="text" class="form-control" id="validationCustom012" placeholder="First name" value="Nombre"required>
-        <div class="valid-feedback">
-        </div>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-5 mb-3 md-form">
-        <label for="validationCustom022">Apellido</label>
-        <input type="text" class="form-control" id="validationCustom022" value="Apellido" required>
-        <div class="valid-feedback">
-        </div>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-5 mb-3 md-form">
-        <label for="validationCustom032">Numero de Celular</label>
-        <input type="text" class="form-control" id="validationCustom032" value="+54 xxx xxxxxxx" required>
-        <div class="invalid-feedback">
-        </div>
-    </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-5 mb-3 md-form">
-        <label for="validationCustom032">Correo Electronico</label>
-        <input type="text" class="form-control" id="validationCustom032" value="E-mail" required>
-        <div class="invalid-feedback">
-        </div>
-        </div>
-    </div>
-    <div class="form-row">
-    <div class="col-md-5 mb-3 md-form">
-      <label for="inputMDEx1">Que te gustaria?</label>
-    <select class="browser-default custom-select">
-      	 <option selected>Desplegar opciones</option>
-  		   <option value="01"> Electrodos </option>
-  		   <option value="02"> Radiofrecuencia </option>
-  		   <option value="03"> Masajes relajantes y descontracturantes </option>
-  			 <option value="04"> Masajes reductores </option>
-  			 <option value="05"> Perfilado de cejas con Henna </option>
-  			 <option value="06"> Limpieza de cutis </option>
-  			 <option value="07"> Manicura: Esmaltado Tradicional con diseño </option>
-  			 <option value="08"> Pedicura: Esmaltado Tradicional con diseño </option>
-  			 <option value="09"> M+P: Esmaltado Tradicional con diseño </option>
-  			 <option value="10"> Manicura:Esmaltado Semipermanente con diseño </option>
-  			 <option value="11"> Pedicura:Esmaltado Semipermanente con diseño </option>
-  			 <option value="12"> M+P:Esmaltado Semipermanente con diseño </option>
-  			 <option value="13"> Esculpidas en Acrilico: Con Esmaltado Tradicional </option>
-  			 <option value="14"> Esculpidas en Acrilico: Con Esmaltado Semipermanente </option>
-  			 <option value="15"> Kapping+Esmaltado semipermanente </option>
-  			 <option value="16"> Depilación: Rostro Completo </option>
-  			 <option value="17"> Depilación:Bozo y Cejas </option>
-  			 <option value="18"> Depilación:Axilas </option>
-  			 <option value="19"> Depilación:Pelvis y Tira </option>
-  			 <option value="20"> Depilación:Piernas Completa </option>
-  			 <option value="21"> Depilación: 1/2 Pierna </option>
-  			 <option value="22"> Depilación Promo: Pelvis y Tira + Axilas + Piernas Completo </option>
-         <option value="23">Pulso Magnetico Neuromuscular</option>
-		   </select>
-	  </div>
-	</div>
-		 <div class="form-row">
-		 <div class="col-md-5 mb-3 md-form">
-  	   <select class="browser-default custom-select">
-  	     <option selected>Selecciona hasta dos sevicios</option>
-  			 <option value="00"> Nada más, Gracias. </option>
-  			 <option value="01"> Electrodos </option>
-  			 <option value="02"> Radiofrecuencia </option>
-  			 <option value="03"> Masajes relajantes y descontracturantes </option>
-				 <option value="04"> Masajes reductores </option>
-				 <option value="05"> Perfilado de cejas con Henna </option>
-				 <option value="06"> Limpieza de cutis </option>
-				 <option value="07"> Manicura: Esmaltado Tradicional con diseño </option>
-				 <option value="08"> Pedicura: Esmaltado Tradicional con diseño </option>
-				 <option value="09"> M+P: Esmaltado Tradicional con diseño </option>
-				 <option value="10"> Manicura:Esmaltado Semipermanente con diseño </option>
-				 <option value="11"> Pedicura:Esmaltado Semipermanente con diseño </option>
-				 <option value="12"> M+P:Esmaltado Semipermanente con diseño </option>
-				 <option value="13"> Esculpidas en Acrilico: Con Esmaltado Tradicional </option>
-				 <option value="14"> Esculpidas en Acrilico: Con Esmaltado Semipermanente </option>
-				 <option value="15"> Kapping+Esmaltado semipermanente </option>
-				 <option value="16"> Depilación: Rostro Completo </option>
-				 <option value="17"> Depilación:Bozo y Cejas </option>
-				 <option value="18"> Depilación:Axilas </option>
-				 <option value="19"> Depilación:Pelvis y Tira </option>
-				 <option value="20"> Depilación:Piernas Completa </option>
-				 <option value="21"> Depilación: 1/2 Pierna </option>
-				 <option value="22"> Depilación Promo: Pelvis y Tira + Axilas + Piernas Completo </option>
-         <option value="23">Pulso Magnetico Neuromuscular</option>
-			</select>
-		</div>
-	  </div>
-		    <div class="md-form">
-		    <div class="md-form mx-3 my-3">
-			  <div class="md-form">
-           <label for="date-picker-example">Elige fecha</label>
-        <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker"value="dd/mm/aa">
-       
-        </div>
-		    </div>
-		    </div>
-      		 <div class="md-form">
-      		 <div class="md-form mx-3 my-3">
-           
-            <label for="inputMDEx1">Elige horario</label>
-            <input type="time" id="inputMDEx1" class="form-control">
+<div class="container" data-toggle="collapse">
+<div class="card-group">
+ <div class="col-md-5">
+  <div class="card">
+    <div class="turnos"> 
+      <h2> Turnos </h2>
+      <form class="needs-validation" novalidate>
+         <div class="form-row">
+            <label for="validationCustom012">Nombre</label>
+            <input type="text" class="form-control" id="validationCustom012" placeholder="First name" value="Nombre"required>
+            <div class="valid-feedback">
             </div>
-      	  </div>   
-	      <div class="col-md-6 mb-4 md-form">
-        <div class="form-group">
-        <div class="form-check pl-2">
-        <label class="form-check-label" for="invalidCheck2">Aceptar terminos.</label>
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-        </div>
-        <div class="col-md-5 mb-3 md-form">
-        <div class="invalid-feedback">
-        Debes acceptar los terminos.
-        </div>
-        </div>
-        <div class="col-md-5 mb-4 md-form">
-    	  <div class="form-group">
-        <button class="btn btn-primary btn-sm btn-rounded" type="submit">Comprobar Disponibilidad</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </form>
+            </div>
+         <div class="form-row">
+            <label for="validationCustom022">Apellido</label>
+            <input type="text" class="form-control" id="validationCustom022" value="Apellido" required>
+            <div class="valid-feedback">
+            </div>
+            </div>
+         <div class="form-row">
+            <label for="validationCustom032">Numero de Celular</label>
+            <input type="text" class="form-control" id="validationCustom032" value="+54 xxx xxxxxxx" required>
+            <div class="invalid-feedback">
+            </div>
+         </div>
+         <div class="form-row">
+            <label for="validationCustom032">Correo Electronico</label>
+            <input type="text" class="form-control" id="validationCustom032" value="E-mail" required>
+            <div class="invalid-feedback">
+          </div>
+          </div>
+             <div class="form-row">
+             <label for="inputMDEx1">Que te gustaria?</label>
+             <select class="browser-default custom-select">
+            	 <option selected>Desplegar opciones</option>
+        		   <option value="01"> Electrodos </option>
+        		   <option value="02"> Radiofrecuencia </option>
+        		   <option value="03"> Masajes relajantes y descontracturantes </option>
+        			 <option value="04"> Masajes reductores </option>
+        			 <option value="05"> Perfilado de cejas con Henna </option>
+        			 <option value="06"> Limpieza de cutis </option>
+        			 <option value="07"> Manicura: Esmaltado Tradicional con diseño </option>
+        			 <option value="08"> Pedicura: Esmaltado Tradicional con diseño </option>
+        			 <option value="09"> M+P: Esmaltado Tradicional con diseño </option>
+        			 <option value="10"> Manicura:Esmaltado Semipermanente con diseño </option>
+        			 <option value="11"> Pedicura:Esmaltado Semipermanente con diseño </option>
+        			 <option value="12"> M+P:Esmaltado Semipermanente con diseño </option>
+        			 <option value="13"> Esculpidas en Acrilico: Con Esmaltado Tradicional </option>
+        			 <option value="14"> Esculpidas en Acrilico: Con Esmaltado Semipermanente </option>
+        			 <option value="15"> Kapping+Esmaltado semipermanente </option>
+        			 <option value="16"> Depilación: Rostro Completo </option>
+        			 <option value="17"> Depilación:Bozo y Cejas </option>
+        			 <option value="18"> Depilación:Axilas </option>
+        			 <option value="19"> Depilación:Pelvis y Tira </option>
+        			 <option value="20"> Depilación:Piernas Completa </option>
+        			 <option value="21"> Depilación: 1/2 Pierna </option>
+        			 <option value="22"> Depilación Promo: Pelvis y Tira + Axilas + Piernas Completo </option>
+               <option value="23">Pulso Magnetico Neuromuscular</option>
+      		   </select>
+      	     </div>
+      		   <div class="form-row">
+        	   <select class="browser-default custom-select">
+        	     <option selected>Selecciona hasta dos sevicios</option>
+        			 <option value="00"> Nada más, Gracias. </option>
+        			 <option value="01"> Electrodos </option>
+        			 <option value="02"> Radiofrecuencia </option>
+        			 <option value="03"> Masajes relajantes y descontracturantes </option>
+      				 <option value="04"> Masajes reductores </option>
+      				 <option value="05"> Perfilado de cejas con Henna </option>
+      				 <option value="06"> Limpieza de cutis </option>
+      				 <option value="07"> Manicura: Esmaltado Tradicional con diseño </option>
+      				 <option value="08"> Pedicura: Esmaltado Tradicional con diseño </option>
+      				 <option value="09"> M+P: Esmaltado Tradicional con diseño </option>
+      				 <option value="10"> Manicura:Esmaltado Semipermanente con diseño </option>
+      				 <option value="11"> Pedicura:Esmaltado Semipermanente con diseño </option>
+      				 <option value="12"> M+P:Esmaltado Semipermanente con diseño </option>
+      				 <option value="13"> Esculpidas en Acrilico: Con Esmaltado Tradicional </option>
+      				 <option value="14"> Esculpidas en Acrilico: Con Esmaltado Semipermanente </option>
+      				 <option value="15"> Kapping+Esmaltado semipermanente </option>
+      				 <option value="16"> Depilación: Rostro Completo </option>
+      				 <option value="17"> Depilación:Bozo y Cejas </option>
+      				 <option value="18"> Depilación:Axilas </option>
+      				 <option value="19"> Depilación:Pelvis y Tira </option>
+      				 <option value="20"> Depilación:Piernas Completa </option>
+      				 <option value="21"> Depilación: 1/2 Pierna </option>
+      				 <option value="22"> Depilación Promo: Pelvis y Tira + Axilas + Piernas Completo </option>
+               <option value="23">Pulso Magnetico Neuromuscular</option>
+      			</select>
+      		</div>
+    		    <div class="form-row">
+                <label for="date-picker-example">Elige fecha</label>
+                <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker"value="dd/mm/aa">
+            </div>
+              	<div class="form-row">
+                <label for="inputMDEx1">Elige horario</label>
+                <input type="time" id="inputMDEx1" class="form-control">
+            </div>
+                <div class="form-row">   
+                <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Aceptar Terminos</label>
+                </div>
+              </div>
+              <div class="form-row"> 
+                <button type="submit">Comprobar Disponibilidad</button>
+            </div>
+          </form>
+       </div>
+     </div>
+   </div>
+     <!--end of form-->
+  <div class="col-md-5">
+  <div class="card">
+    <div class="info"> 
+      <h2>Información</h2>
+        <p><i class="fas fa-calendar-alt"></i> Estamos de Lunes a Sábado de 09 a 18hs.</p>
+        <p><i class="far fa-credit-card"></i>Aceptamos todas las tarjetas.</p>
+        <p><i class="fas fa-handshake"></i>Aceptamos Mercado-Pago.</p>
+    </div>
   </div>
 </div>
 </div>
+</div>
+
 <!--footer-->
 <footer>
-  <div class="footer-copyright text-center py-3">© 2019 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> SB-DaniellePomes.com</a>
+  <div class="footer">
+    <i class="fas fa-map-marker-alt"> </i> Honduras 1048 Resistencia Chaco Argentina
+    <i class="fas fa-phone-square-alt"></i>+54 9 362 474-3621
   </div>
 </footer>
-
 </body>  
 </html>

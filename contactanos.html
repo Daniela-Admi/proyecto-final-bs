@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Salud & Belleza - Danielle Pomés</title>
-  <meta charset="utf-8">
+  <title>Contacto/Salud & Belleza/Danielle Pomés</title>
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="pagina de belleza tratamientos esteticos de salud en resistencia chaco argentina">
   <meta name="keywords"  content="BELLEZA, SALUD, Danielle Pomés, POMES, ESTETICA, TRATAMIENTOS, BODY-UP, TURNOS, SERVICIO, ELECTRODOS, RADIOFRECUENCIA, CEJAS, pestañas">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="saludybelleza.js"></script>
+  <script src="js/saludybelleza.js"></script>
 </head>
+<!--Body-->
 <body>
-     <!--Body-->
- <div class="container">
-    <header>
-   <!--Main Navigation-->
-    <div class="header_nav">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!--Main logo-->
-      <a class="navbar-brand" href="index.html"><img src="image/logo1.png" class="rounded" alt="Logo no encontrado"></a> 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!--Header Navigation-->
+  <header id="navigation_bar">
+  <div class="header_nav">
+      <nav class="navbar navbar-expand-lg bg-light">
+       <!--Header logo-->
+      <a class="navbar-brand" href="index.html"><img src="image/logo1.png" class="rounded" alt="Logo no encontrado" img-fluid></a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="servicios.html"><kbd>Servicios</kbd><span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="servicios.html"><strong>SERVICIOS</strong><span class="sr-only">(current)</span></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="turnos.html"><kbd>Turnos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="turnos.html"><strong>TURNOS</strong></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="quienessomos.html"><kbd>Quienes Somos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="quienessomos.html"><strong>QUIENES SOMOS</strong></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="contactanos.html"><kbd>Contactanos</kbd><span class="sr-only">(current)</span></a>
+           <li class="nav-item">
+            <a class="nav-link" href="contactanos.html"><strong>CONTACTANOS</strong></a>
           </li>
         </ul>
-      </div>
+             <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="facebook" href="https://www.facebook.com/S.BDaniellePomes/"target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li id="nav-item">
+                   <a class="instagram" href="https://www.instagram.com/sb.daniellepomes/"target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
     </nav>
   </div>
-</header>
- <!-- Material form contact -->
-<div class="card">
-<div class="col-sm-6">
-   <h1 class="card-title">Contactanos</h1>
-    <div class="card-body">
+</header><!--End of the main navbar-->
+<div class="container">
+<div class="card-group">
+  <div class="col-md-5">
+    <div class="card">
+     <div class="contactanos"><!-- Material form contact -->
         <!-- Forms -->
-        <form class="text-center" style="color: #94618E;" action="#!">
-            <!-- Name -->
-            <div class="md-form mt-3">
-                <input type="text" id="materialContactFormName" class="form-control">
-                <label for="materialContactFormName">Nombre</label>
-            </div>
-            <!-- E-mail -->
-            <div class="md-form">
-                <input type="email" id="materialContactFormEmail" class="form-control">
-                <label for="materialContactFormEmail">Correo Electronico</label>
-            </div>
-            <!-- Subject -->
-            <div class="md-form">
-                <input type="email" id="materialContactForSubject" class="form-control">
-                <label for="materialContactFormEmail">Asunto</label>
-            </div>
-            <!--Message-->
-            <div class="md-form">
-                <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
-                <label for="materialContactFormMessage">Message</label>
-            </div>
-            <!-- Send button -->
-            <button class="btn btn-primary btn-sm btn-rounded" type="submit">Enviar</button>
-
+        <div class="formulario-contacto">
+        <form>
+          <h1><i class="fas fa-envelope"></i>Contactanos</h1>
+          <p> Ante cualquier duda no dudes en escribirnos</p>
+        <!-- Name -->
+              <div class="md-form">
+              <input type="text" id="materialContactFormName" class="form-control">
+              <label for="materialContactFormName">Nombre</label>
+              </div>
+              <!-- E-mail -->
+              <div class="md-form">
+              <input type="email" id="materialContactFormEmail" class="form-control">
+              <label for="materialContactFormEmail">Correo Electronico</label>
+              </div>
+              <!-- Subject -->
+              <div class="md-form">
+              <input type="email" id="materialContactForSubject" class="form-control">
+              <label for="materialContactFormEmail">Asunto</label>
+              </div>
+              <!--Message-->
+              <div class="md-form">
+              <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+              <label for="materialContactFormMessage">Mensaje</label>
+              </div>
+              <!-- Send button -->
+              <button type="submit">Enviar Formulario</button>
         </form>
-        <!-- Form -->
-</div></div>
-<div><!-- GoogleMaps -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.6288278452566!2d-59.00334968614598!3d-27.480812582886173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450ca54bb529ab%3A0xe523e175211a94b9!2sHonduras%201048%2C%20Resistencia%2C%20Chaco!5e0!3m2!1ses!2sar!4v1574479319083!5m2!1ses!2sar" width="400px" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>        <!-- Form -->
+</div>
+</div>
+</div>
+    <!-- GoogleMaps -->
+    <div class="col-md-5">
+    <div class="card">
+    <div class="mapa-contacto">
+         <h1><i class="fas fa-map"></i>Mapa</h1>
+         <p>Llega fácilmente</p>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.6289807723183!2d-59.0033496854317!3d-27.480807823753736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450ca54bb529ab%3A0xe523e175211a94b9!2sHonduras%201048%2C%20Resistencia%2C%20Chaco!5e0!3m2!1ses!2sar!4v1574787166148!5m2!1ses!2sar" max-width="450" height="410" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  </div>
+  </div>
 </div>
 </div>
 <!--footer-->
 <footer>
-  <div class="footer-copyright text-center py-3">© 2019 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> SB-DaniellePomes.com</a>
+  <div class="footer">
+    <i class="fas fa-map-marker-alt"> </i> Honduras 1048 Resistencia Chaco Argentina
+    <i class="fas fa-phone-square-alt"></i>+54 9 362 474-3621
   </div>
 </footer>
 </body>  
