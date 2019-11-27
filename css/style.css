@@ -1,11 +1,9 @@
 /* general background style*/
 .form-row, footer, .btn, .card-body, .card-body, .card-text, .formulario-contacto, .mapa-contacto
 {
-	background-color: #d8bfd8; /*Thistle*/	
-}
+	background-color: #d8bfd8; /*Thistle*/	}
 kbd{
-	background-color: #905b74; /*purple*/
-}
+	background-color: #905b74; /*purple*/}
 /*icons*/
 i{	
   font-size: 28px;
@@ -103,11 +101,10 @@ h3, h2, h1, p, iframe{
 
 /*contact us*/
 .formulario-contacto, .mapa-contacto{
-
 	max-width: 450px;
     max-height: 650px;
-    padding: 15px;
-    margin: 10px;
+    padding: 10px;
+    margin: 5px;
 }
 .md-form{
 	padding: 10px 25px 10px 25px;
@@ -122,7 +119,6 @@ h3, h2, h1, p, iframe{
 .fab{
 	size: 35px;
 }
-
 
 /* here is the footer*/
 .footer{
@@ -151,18 +147,49 @@ font-family: 'Roboto', sans-serif;
 height: auto;
 max-width: 100%;
 margin: 40px;
-
 } 
+.col-md-7{  
+height: auto;
+width: 100%;
+} 
+.formulario-contacto{
+	padding: 2px;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
 .quienessomos-image img{
-width: 100% ;
+width: 95% ;
 height: auto;
 }
-.mapa-contacto iframe{
-	width: 95%;
+iframe{
+	max-width: 450px;
+	max-height: 410px;
+	margin: 0px;
+}
+.form-row{
+	max-width: 100%;
 	height: auto;
+	margin: 0;
+	padding: 3px;
 }
+.footer{
+width: 100%;
 }
+.label{
+	margin: 2px;
+	padding: 3px;	
+}
+.input{
+	margin: 2px;
+	padding: 3px;}
 
+.card{
+	max-width: 100%;
+	margin: 2px;
+	padding: 3px;
+  }
+}
 @include media-breakpoint-up(sm) {
 html {
 font-size: 1.2rem;
