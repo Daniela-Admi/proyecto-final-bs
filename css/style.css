@@ -1,42 +1,62 @@
-/* general background style*/
-.form-row, footer, .btn, .card-body, .card-body, .card-text, .formulario-contacto, .mapa-contacto, .card
+/* general background color*/
+.form-row, footer, .card-body, .card-text, .formulario-contacto, .mapa-contacto, .card
 {
-	background-color: #d8bfd8; /*Thistle*/	}
+	background-color: #d7a9c8; /*magenta*/	
+}
 kbd, .card-up{
-	background-color: #905b74; /*purple*/}
+	background-color: #905b74; /*purple*/
+}
 /*icons*/
 i{	
-  font-size: 30px;
-  padding: 3px;
-  color:#c13278; /*shadow pink*/
+	font-size: 28px;
+	padding: 3px;
+	color:#c13278; /*shadow pink*/
 }
-/*especifications for buttons*/
-button{   
-color: #905b74; /*purple*/
-padding: 8px;
-margin: 8px;
+.fa-facebook{
+	color: #0081c2;
+	margin: 2px;
 }
-
+.fa-facebook:hover{
+	color:#00a1f3;
+}
+.fa-instagram{
+	color:#e51a4c;
+	margin: 2px;
+}
+.fa-instagram:hover{
+	color:#ec5379;	
+}
+.fa-whatsapp{
+	color:#00ff7f;
+	margin: 2px;
+}
+.fa-whatsapp:hover{
+	color:#00bb2d;	
+}
 h2{
 	text-align: center;
 }
 h4, h3, h2, h1, p, iframe{ 
-	margin: 12px;
-	  
+	margin: 12px;	  
 }
-
+.btn{
+    background-color:#c13278;
+    color:white;
+}
 /*the navigation bar and logo*/ 
 .navbar-brand{
-	max-width: 330px;
+	max-width: 300px;
 	height: auto;
 }
 #navigation_bar a{    
 	color:#c13278; /*shadow pink*/
 	text-decoration: none;
-	font-size: 18px; 
+	font-size: 18px;
+	margin-right: 8px;   
 }   
-a:hover {
-color:pink;
+.nav-link:hover {
+	box-shadow: 0px 1px;
+	color:#9a2860;
 }                         
 .header_nav{  
     justify-content: flex-end;
@@ -48,30 +68,28 @@ color:pink;
 .navbar{
 	text-decoration: none;
 }
-
 /*main index carousel*/
-
 @media (min-width: 768px) {
 .carousel-multi-item-2 .col-md-3 {
-float: left;
-width: 25%;
-max-width: 100%;
+	float: left;
+	width: 25%;
+	max-width: 100%;
 } 
 .carousel-image{
-margin: 0px; 
-width: auto;
+	margin: 0px; 
+	width: auto;
 }
 .carousel-multi-item-2 .card img {
 border-radius: 2px; }
 html {
-font-size: 1rem;
-font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
 }    
 }
 @media (min-width: 360px) {
 .aside_newslater{  
-height: auto;
-max-width:100%;
+	height: auto;
+	max-width:100%;
 
 } 
 }
@@ -114,10 +132,10 @@ max-width:100%;
 }
 .input{
 	margin: 2px;
-	padding: 3px;}
+	padding: 3px;
 }
 .form-row{
-	border: solid 15px #d8bfd8;
+	border: solid 15px #d7a9c8; /*magenta*/
 	max-width: 300px;
 	margin: 10px;
 }
@@ -131,7 +149,6 @@ max-width:100%;
 .md-form{
 	padding: 5px 8px 5px 8px;
 }
-
 .form-check-input {
 	margin: 3px;
 }
@@ -141,28 +158,21 @@ max-width:100%;
 .fab{
 	size: 35px;
 }
-
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
-  }
-  
-
+@include media-breakpoint-only(lg) {
+	column-count: 4;
+}
+@include media-breakpoint-only(xl) {
+	column-count: 5;
+}
 /*ABOUT US*/
-
 .card-img-left{
 	justify-content: center;
 	max-width: 450px;
 	height: auto;
 }
-
-
-
 .col-md-5{  
-height: auto;
-width: 100%;
+	height: auto;
+	width: 100%;
 } 
 .formulario-contacto{
 	padding: 2px;
@@ -171,8 +181,8 @@ width: 100%;
 	margin: 0px;
 }
 .quienessomos-image img{
-width: auto;
-height: auto;
+	width: auto;
+	height: auto;
 }
 iframe{
 	max-width: 450px;
@@ -187,9 +197,9 @@ iframe{
 }
 /* here is the footer*/
 .footer{
-display:flex;
-flex-direction: flex-start;
-width: 100%;
+	display:flex;
+	flex-direction: flex-start;
+	width: 100%;
 }
 .footer a{
 	text-decoration: none;
@@ -214,29 +224,26 @@ width: 100%;
 .card-body::-webkit-scrollbar {
   width: 1em;
 }
-
 .card-body::-webkit-scrollbar-thumb {
-  background-color: #d8bfd8;
+  background-color: #d7a9c8; /*magenta*/
   outline: 1px solid pink;
 }
 .servicios img{
 	max-height: 250px;
 	width: auto;
-
 }
-
 @include media-breakpoint-up(sm) {
 html {
-font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 }
 @include media-breakpoint-up(md) {
 html {
-font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 }
 @include media-breakpoint-up(lg) {
 html {
-font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 }
