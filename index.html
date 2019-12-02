@@ -20,7 +20,7 @@
 <!--Header Navigation-->
   <header id="navigation_bar">
   <div class="header_nav">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg">
        <!--Header logo-->
       <a class="navbar-brand" href="index.html"><img class="img-fluid" src="image/logo1.png" alt="Logo no encontrado"></a> 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
@@ -54,9 +54,10 @@
   </div>
 </header><!--End of the main navbar-->
 <!--Main carrusel-->
-<main class="inicio">
+<div class="container">
 <div class="carousel">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -64,21 +65,21 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="image/masaje1.png" class="d-block w-100" alt="planifica tu agenda" img-fluid>
+        <img class="d-block w-100" src="image/1left.jpg" alt="imagen izquierda" img-fluid>
         <div class="carousel-caption d-none d-md-block">
           <h5><kbd>BIENVENIDAS AL PORTAL</kbd></h5>
           <p><kbd>Hoy puedes empezar a planificar tu agenda de belleza.</kbd></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="image/carrusel1.jpg" class="d-block w-100" alt="tu sitio de belleza" img-fluid>
+        <img class="d-block w-100" src="image/2left.jpg" alt="imagen izquierda" img-fluid>
         <div class="carousel-caption d-none d-md-block">
           <h5><kbd>¡El sitio que estabas esperando!</kbd></h5>
           <p><kbd>En la sección de "TURNOS" elegí los días y horarios que mejor se ajusten a vos.</kbd></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="image/carrusel2.jpg" class="d-block w-100" alt="suscribite" img-fluid>
+        <img class="d-block w-100" src="image/3right.jpg" alt="imagen derecha" img-fluid>
         <div class="carousel-caption d-none d-md-block">
           <h5><kbd>Suscribite al Newslater</kbd></h5>
           <p><kbd>...y accede a descuentos y promociones exclusivas.</kbd></p>
@@ -96,18 +97,17 @@
   </div>
 </div>
 <!--End of the carousel-->
-<!--Suscribe to the newslater-->
- <div class="aside_newslater">
-  <div class="card-body">
-    <form>
-       <h3><i class="far fa-gem"></i>Suscribite al Newslater</h3>
-       <input type="text" placeholder="Nombre" name="name" required>
-       <input type="text" placeholder="Direccion de Email" name="mail" required>
-       <button type="submit">Suscribirme</button>
-  </form>
+</div>
+<div class="publicidad">
+  <div class="text-black text-center py-5 px-4">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Te traemos lo último en belleza corporal a precios accesibles</strong></h2>
+      <p class="mx-5 mb-5"><h5>Queremos que te sientas bella pero también cómoda, planifica hoy tu agenda de belleza en nuestra seccion de turnos.</h5>
+      </p>
+      <a class="btn btn-outline-white btn-md">Ir a planificar</a>
+    </div>
   </div>
-  </div>
-<!-- End of subscription -->
+</div>
 <!--Section: Testimonials-->
 <div class="container">
     <section class="section pb-3 text-center">
@@ -127,13 +127,12 @@
         <div class="avatar mx-auto white"><img src="image/testi3.jpg"
             alt="avatar mx-auto white" class="rounded-circle img-fluid">
         </div>
-
         <div class="card-body">
           <!--Name-->
-          <h4 class="card-title mt-1">Ivania Colman</h4>
+          <h4 class="card-title mt-1">Maria Rambau</h4>
           <hr>
           <!--Quotation-->
-          <p><i class="fas fa-quote-left"></i> Recomiendo el sitio es fácil y practico, nunca tuve problemas. Las chicas son muy atentas y profesionales. Y mis uñas nunca se vieron mejor. </p>
+          <p><i class="fas fa-quote-left"></i> Recomiendo el sitio es fácil y practico, nunca tuve problemas. Las chicas son muy atentas y profesionales. Siempre es un placer trabajar con estas chicas son muy dedicadas. Y mis uñas nunca se vieron mejor</p>
         </div>
       </div>
       <!--Card-->
@@ -152,7 +151,7 @@
         </div>
         <div class="card-body">
           <!--Name-->
-          <h4 class="card-title mt-1">Adriana Rodríguez</h4>
+          <h4 class="card-title mt-1">Ivania Colman</h4>
           <hr>
           <!--Quotation-->
           <p><i class="fas fa-quote-left"></i> Recomiendo la estética porque a mí me han dado muy buenos resultados los tratamientos con radiofrecuencia, sobre todo después de mi embarazo era primeriza y estaba medio perdida, más que feliz con su trabajo.</p>
@@ -173,7 +172,7 @@
         </div>
         <div class="card-body">
           <!--Name-->
-          <h4 class="card-title mt-1">Maria Rambau</h4>
+          <h4 class="card-title mt-1">Adriana Rodríguez</h4>
           <hr>
           <!--Quotation-->
           <p><i class="fas fa-quote-left"></i>Yo siempre voy a la estética, lo que me gusta de la página es que puedo sacar turno a cualquier hora, generalmente me acuerdo antes de dormir que ya es tarde para llamar por teléfono.</p>
@@ -187,12 +186,33 @@
 </div>
 <!--footer-->
 <footer>
-  <div class="footer">
-    <h5><i class="fas fa-map-marker-alt"> </i> Honduras 1048 Resistencia Chaco Argentina</h5>
-    <h5><i class="fas fa-phone-square-alt"></i>+54 9 362 474-3621</h5>
-  </div>
+<div class="card-group">
+<!--Suscribe to the newslater-->
+ <div class="col-md-6">
+    <div class="aside_newslater">
+        <div class="card">
+          <form>
+             <h3><i class="far fa-gem"></i>Suscribite al Newslater</h3>
+             <input type="text" placeholder="Nombre" name="name" required>
+             <input type="text" placeholder="Direccion de Email" name="mail" required>
+             <button type="button" class="btn btn-light">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+</div>
+<!-- End of subscription -->
+<!-- information about SB Danielle Pomes -->
+  <div class="col-md-6">
+     <div class="footer">
+        <div class="card">
+            <p><i class="fas fa-map-marker-alt"></i>Honduras 1048 Resistencia Chaco Argentina</p>
+            <p><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=5493624743621&text=Hola!%20Quiero%20mas%20info%20sobre...">+54 9 362 474-3621</a></p> 
+            <p><i class="fas fa-at"></i><a href="mailto:consultas.sbdaniellepomes@gmail.com">consultas.sbdaniellepomes@gmail.com</a></p>
+        </div>
+    </div>
+ </div>
+<!-- End of footer -->
+</div>
 </footer>
 </body>  
 </html>
-
-
