@@ -229,7 +229,7 @@ iframe{
 	max-width: 100%;
 	height: auto;
 	text-decoration: none;
-	margin:15px;
+	margin: 10px;
 }
 /*info of footer*/
 .footer-info a{
@@ -286,7 +286,7 @@ body {
 }    
 }
 /*responsive celphone*/
-@media (min-width: 360px){
+@media (min-width: 360px @screen-sm-min){
 h1{ 
   	font-size: 15px; 
 }
