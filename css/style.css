@@ -180,7 +180,7 @@ input, textarea, .browser-default, .label, .btn{
 /*Contact us section*/
 .col-md-6{
 	display:flex;
-	justify-content: center;
+	align-content: center;
 }
 .contactanos, .mapa-contacto{
 	max-width: 450px;
@@ -214,7 +214,7 @@ iframe{
 }
 /*about us section*/
 .card-img-left{
-	max-width: 480px;
+	width: 300px;
 	height: auto;
 }
 .col-md-6 p{
@@ -265,7 +265,6 @@ iframe{
  	min-width: 800px;
 	max-height: 550px;
 } 
-
 /*responsive tablet*/
 @media (min-width: 768px) {
 
@@ -287,15 +286,11 @@ body {
 }    
 }
 /*responsive celphone*/
-@media (min-width: 360px @screen-sm-min){
-body{ 
-  	font-size: 13px; 
+@media (min-width: 360px){
+h1{ 
+  	font-size: 15px; 
 }
-/* about us*/
-.card-img-left{
-	width: 25%;
-	height: auto;
-}
+
 .col-md-6 p{
 	font-size: 13px;
 }
@@ -322,5 +317,25 @@ body{
 	width: 00%;
 }
 /*publicity from the index*/ 
+.card-deck{
+	margin: 0px;
+}
 
+}
+
+
+@media (min-width: 360px @screen-sm-min) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+}
+.row {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+}
+}
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
 }
