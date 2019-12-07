@@ -29,26 +29,29 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="servicios.html"><strong>SERVICIOS</strong><span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="servicios.html"><strong>Servicios</strong><span class="sr-only">(current)</span></a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="turnos.html"><strong>TURNOS</strong></a>
+            <a class="nav-link" href="turnos.html"><strong>Turnos</strong></a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="quienessomos.html"><strong>QUIENES SOMOS</strong></a>
+            <a class="nav-link" href="quienessomos.html"><strong>Quienes Somos</strong></a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="contactanos.html"><strong>CONTACTANOS</strong></a>
+            <a class="nav-link" href="contactanos.html"><strong>Contactanos</strong></a>
           </li>
-          </ul>
-             <ul class="navbar-nav nav-flex-icons">
+            <ul id="nav-icons" class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
-                    <a href="https://www.facebook.com/S.BDaniellePomes/"target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li id="nav-item">
-                   <a href="https://www.instagram.com/sb.daniellepomes/"target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                   <a href="https://api.whatsapp.com/send?phone=5493624743621&text=Hola!%20Quiero%20mas%20info%20sobre..."><i class="fab fa-whatsapp"></i></a>
+                  <a href="https://www.facebook.com/S.BDaniellePomes/"target="_blank"> 
+                  <i class="fab fa-facebook"> 
+                  </a></i>
+                  <a href="https://www.instagram.com/sb.daniellepomes/"target="_blank">
+                  <i class="fab fa-instagram"> 
+                  </a></i>
+                  <a href="https://api.whatsapp.com/send?phone=5493624743621&text=Hola!%20Quiero%20mas%20info%20sobre...">
+                  <i class="fab fa-whatsapp">
+                  </a></i> 
+                 </li>
             </ul>
         </div>
     </nav>
@@ -160,16 +163,17 @@
 <!--end of services-->
 <!--footer-->
 <footer>
+  <div class="container">
 <div class="card-group">
 <!--Suscribe to the newslater-->
  <div class="col-md-6">
-    <div class="aside_newslater">
-        <div class="card">
+  <div class="card-deck">
+    <div class="aside_newslater">   
           <form>
-             <h3><i class="far fa-gem"></i>Suscribite al Newslater</h3>
+             <h4 class="newslater">Suscribite al Newslater</h4>
              <input type="text" placeholder="Nombre" name="name" required>
              <input type="text" placeholder="Direccion de Email" name="mail" required>
-             <button type="button" class="btn btn-light">Suscribirme</button>
+             <a href="turnos.html"><button class="btn btn-success btn-md">Enviar</button></a>
         </form>
       </div>
     </div>
@@ -177,12 +181,13 @@
 <!-- End of subscription -->
 <!-- information about SB Danielle Pomes -->
   <div class="col-md-6">
-     <div class="footer">
-        <div class="card">
-            <p><i class="fas fa-map-marker-alt"></i>Honduras 1048 Resistencia Chaco Argentina</p> 
-            <p><i class="fas fa-at"></i><a href="mailto:consultas.sbdaniellepomes@gmail.com">consultas.sbdaniellepomes@gmail.com</a></p>
+    <div class="card-deck">
+     <div class="footer-info">    
+            <h6><i class="fas fa-map-marker-alt"></i> Honduras 1048 Rcia. Chaco Argentina</h6>
+            <h6><i class="fas fa-at"></i><a href="mailto:consultas.sbdaniellepomes@gmail.com" data-toggle="tooltip" title="¿Dudas?Escribinos">consultas.sbdaniellepomes</a></h6>
         </div>
     </div>
+ </div>
  </div>
 <!-- End of footer -->
 </div>

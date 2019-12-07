@@ -1,60 +1,21 @@
+/*General font style family*/
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 }
-/* general background color*/
-.form-row, footer, .card-body, .card-text, .formulario-contacto, .mapa-contacto, .card
+/* General background color*/
+.form-row, footer, .card-body, .card-text, .formulario-contacto, .mapa-contacto, .card, .carousel
 {
 	background-color: #d7a9c8; /*magenta*/	
 }
-kbd, .card-up{
+kbd, .card-up, .btn
+{
 	background-color: #905b74; /*purple*/
 }
-/*icons*/
-i{	
-	font-size: 28px;
-	padding: 3px;
-	color:#c13278; /*shadow pink*/
-}
-.fa-facebook{
-	color: #0081c2;
-	margin: 2px;
-}
-.fa-facebook:hover{
-	color:#00a1f3;
-}
-.fa-instagram{
-	color:#e51a4c;
-	margin: 2px;
-}
-.fa-instagram:hover{
-	color:#ec5379;	
-}
-.fa-whatsapp{
-	color:#00ff7f;
-	margin: 2px;
-}
-.fa-whatsapp:hover{
-	color:#00bb2d;	
-}
-h2{
-	text-align: center;
-}
-h4, h3, h2, h1, p, iframe{ 
-	margin: 12px;	  
-}
-.btn{
-    background-color:#c13278;
-    color:white;
-    margin-top: 15px;
-}
-input{
-	margin: 5px 8px 8px 5px;
-	padding: 5px;
-}
-/*the navigation bar and logo*/ 
+/*Header - Navigation bar and logo*/ 
 .navbar-brand{
 	max-width: 300px;
-	height: auto;
+	max-height: 120px;
+	float: right;
 }
 #navigation_bar a{    
 	color:#c13278; /*shadow pink*/
@@ -62,29 +23,111 @@ input{
 	font-size: 18px;
 	margin-right: 8px;   
 }   
-.nav-link:hover {
-	box-shadow: 0px 1px;
-	color:#9a2860;
+#navigation_bar a:hover{
+	color:#d7a9c8;
+	text-decoration: none;
 }                         
 .header_nav{  
     justify-content: flex-end;
 	background-color: white;
 }         
-.nav-item{
-   size: 95px;                                                                          
-}
+
 .navbar{
 	text-decoration: none;
 }
+
+/*Icons - social media - information */
+i{	
+	font-size: 28px;
+	color:#c13278; /*shadow pink*/
+}
+.fa-facebook{
+	margin: 2px;
+	font-size: 30px;
+}
+
+.fa-instagram{
+	margin: 2px;
+	font-size: 30px;
+
+}
+.fa-whatsapp{
+	margin: 2px;
+	font-size: 30px;
+}	
+.fa-facebook:hover{
+	color:#d7a9c8;
+
+  } 
+.fa-instagram:hover{
+	color:#d7a9c8;
+
+  } 
+.fa-whatsapp:hover{
+	color:#d7a9c8;
+ }
+.fa-map-marker-alt{
+	font-size: 25px;
+	margin: 8px;
+}
+.fa-at{
+	font-size: 25px;
+	margin: 8px;
+}
+.fa-calendar-alt{
+	color: white;
+	margin: 5px;
+}
+.fa-credit-card{
+	color: white;
+	margin: 5px;
+}	
+.fa-handshake{
+	color: white;
+	margin: 5px;
+}
+.fa-telegram-plane{
+	color: white;
+	font-size: 20px;
+}
+/* Titles and text*/
+h2{
+	text-align: center;
+}
+h4, h3, h2, h1, p, iframe{ 
+	margin: 5px;	  
+}
+/*btn - buttons */
+.btn{
+    color:white;
+    border-color: white;
+    padding:5px; 
+}
+/*btn at section - publicity into the index */
+.publicidad .btn{
+ margin-top: 20px;
+}
+
+/*input textea browser-select label and booton*/
+input, textarea, .browser-default, .label, .btn{
+	margin: 3px 8px 8px 3px;
+	max-width: 350px;
+	font-variant: small-caps;
+}
+.btn-success:hover{
+	background-color: #d7a9c8; /*magenta*/
+	border-color: white;
+}
+
 /*Cards*/
 .card{
 	max-width: 100%;
-	margin: 20px 3px 20px 5px;
+	margin: 25px 3px 15px 5px;
 	border: transparent;
   }
 .card-body, .card-text{
 	max-width: 100%;
-	margin: 5px;
+	margin: 0px;
 	padding: 10px;
 }
 .clearfix img{
@@ -93,101 +136,13 @@ input{
 }
 .img-fluid{
 	width: 100% \9;
-	max-height: 760px;
+	max-height: 550px;
 }
 .avatar img {
-  max-width: 250px; 
+  max-width: 250px;
+  margin-top: 20px; 
 }
-
-/*this is the appointment section*/
-.needs-validation{
-	padding: 15px;
-
-}
-.turnos{
-	max-height: auto;
-	max-width: auto;
-}
-.label{
-	margin: 2px;
-	margin-left: 10px;	
-}
-
-.form-row{
-	border: solid 15px #d7a9c8; /*magenta*/
-	max-width: 300px;
-	margin: 10px;
-}
-/*contact us*/
-.contactanos, .mapa-contacto{
-	max-width: 450px;
-    max-height: 650px;
-    padding: 8px;
-    margin-top: 20px;
-}
-.md-form {
-	padding: 5px;
-}
-.form-check-input {
-	margin: 3px;
-}
-.col-sm-4 .col-sm-5 textarea{
-	margin-bottom :5px;	
-}
-.fab{
-	size: 35px;
-}
-/*ABOUT US*/
-.card-img-left{
-	justify-content: center;
-	max-width: 450px;
-	height: auto;
-}
-.col-md-5{  
-	height: auto;
-	width: 100%;
-} 
-.formulario-contacto{
-	padding: 2px;
-	width: 100%;
-	height: auto;
-	margin: 0px;
-}
-.quienessomos-image img{
-	width: auto;
-	height: auto;
-}
-/*google map*/
-iframe{
-	max-width: 450px;
-	max-height: 410px;
-	margin: 0px;
-}
-.form-row{
-	max-width: 100%;
-	height: auto;
-	margin: 0;
-}
-/* here is the footer*/
-.footer{
-	display:flex;
-	flex-direction: flex-start;
-	width: 100%;
-}
-.footer a{
-	text-decoration: none;
-    color: black;
-    margin-bottom: 3px;
-}
-/*newslater - suscribe*/
-.aside_newslater{
-	display:flex;
-	justify-content: center; 
-	margin-bottom: 10px;
-	max-width: 100%;
-	margin: 10px;
-}
-/*services main*/
+/*Our services*/
 .servicios{
 	display:inline-block;
 }
@@ -206,6 +161,82 @@ iframe{
 	max-height: 250px;
 	width: auto;
 }
+.col-sm-4, .col-sm-5{
+	margin-bottom :5px;	
+}
+/*Get an appointment section*/
+.needs-validation{
+	padding: 15px;
+}
+.turnos{
+	max-height: auto;
+	max-width: auto;
+}
+.form-row{
+	border: solid 10px #d7a9c8; /*magenta*/
+	max-width: 300px;
+	margin: 10px;
+}
+/*Contact us section*/
+.col-md-6{
+	display:flex;
+	justify-content: center;
+}
+.contactanos, .mapa-contacto{
+	max-width: 450px;
+    max-height: 650px;
+    padding: 8px;
+    margin-top: 20px;
+}
+.md-form {
+	padding: 5px;
+}
+.form-check-input {
+	margin: 4px;
+}
+
+.formulario-contacto{
+	padding: 2px;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
+/*google map*/
+iframe{
+	max-width: 450px;
+	max-height: 410px;
+	margin: 0px;
+}
+.form-row{
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+}
+/*about us section*/
+.card-img-left{
+	max-width: 480px;
+	height: auto;
+}
+.col-md-6 p{
+	font-size: 19px;
+}
+/* here is the footer*/
+/*suscribe to newslater*/
+.card-deck{
+	display:flex;
+	justify-content: center;
+	align-items: center; 
+	max-width: 100%;
+	height: auto;
+	text-decoration: none;
+	margin:15px;
+}
+/*info of footer*/
+.footer-info a{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
 @include media-breakpoint-up(sm) {
 	font-size: 1.2rem;
 }
@@ -222,14 +253,23 @@ iframe{
 	column-count: 5;
 	font-size: 1.6rem;
 }
-
 /*print font*/
 @media print {
   body { font-size: 10pt }
-}   
+} 
+
+/*responsive notenook*/
+@media (min-width: 1025px) {
+/*corousel*/
+.carousel-item{
+ 	min-width: 800px;
+	max-height: 550px;
+} 
+
 /*responsive tablet*/
 @media (min-width: 768px) {
-	/*main index carousel*/
+
+/*main index carousel*/
 .carousel-multi-item-2 .col-md-3 {
 	float: left;
 	width: 25%;
@@ -240,18 +280,47 @@ iframe{
 	width: auto;
 }
 .carousel-multi-item-2 .card img {
-	border-radius: 2px; }
-	body {
+	border-radius: 2px; 
+}
+body {
 	font-size: 1rem;
-}    }
+}    
+}
 /*responsive celphone*/
-@media (min-width: 360px){
-  body { 
-  	font-size: 17px; 
+@media (min-width: 360px @screen-sm-min){
+body{ 
+  	font-size: 13px; 
 }
-
-/*image of about us*/
+/* about us*/
 .card-img-left{
-	max-width: 320px;
+	width: 25%;
+	height: auto;
 }
+.col-md-6 p{
+	font-size: 13px;
+}
+/*footer icons*/
+.fa-map-marker-alt{
+	font-size: 20px;
+	margin: 0px;
+}
+.fa-at{
+	font-size: 20px;
+	margin: 0px;
+	margin-bottom: 8px;
+}
+.fa-gem{
+	font-size: 24px;
+	margin-right: 0px;
+}
+.footer{
+	margin-top:0px;
+}
+.aside_newslater .input .btn{
+	display: block;
+	margin-bottom: 0px;
+	width: 00%;
+}
+/*publicity from the index*/ 
+
 }
