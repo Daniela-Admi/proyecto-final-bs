@@ -59,60 +59,70 @@
   </div>
 </header>
 <!--End of the main navbar-->
+<div class="container">
 <!--Main contact us-->
-<div class="container" data-toggle="collapse">
-  <h2>Contáctanos</h2>
-  <div class="card mb-3">
-  <div class="row no-gutters">
-    <div class="col-sm-6">
-       <div class="contactanos">
-        <!-- Material form contact -->
-        <div class="formulario-contacto">
-        <form>
-              <!-- Name -->
-              <div class="md-form">
-              <label for="materialContactFormName">Nombre</label>
-              <input type="text" id="materialContactFormName" class="form-control">
+    <section id="contact" class="text-page pb-4"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="heading">Contactanos</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <form id="contact-form" method="post" action="#" class="contact-form">
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="name">Nombre *</label>
+                          <input type="text" name="name" placeholder="Ingresa tu nombre" required="required" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="surname">Apellido *</label>
+                          <input type="text" name="surname" placeholder="Ingresa tu apellido" required="required" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="surname">Tu e-mail *</label>
+                      <input type="email" name="email" placeholder="Ingresa tu e-mail" required="required" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="surname">Tu mensaje para nosotros *</label>
+                      <textarea rows="4" name="message" placeholder="Ingresa tu mensaje" required="required" class="form-control"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <a href="turnos.html"><button class="btn btn-success btn-md">Enviar mensaje</button></a>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <!-- E-mail -->
-              <div class="md-form">
-              <label for="materialContactFormEmail">Correo Electronico</label>
-              <input type="email" id="materialContactFormEmail" class="form-control">
+              <div class="col-lg-6">
+                <p> Si tienes dudas sobre los precios o sobre cualquier tratamiento, infórmenos, lo asesoramos sin costo adicional,contáctenos ahora y aclare todas las dudas.</p>
+                <p>Estamos interesados ​​en su opinión, si tiene ideas o alguna sugerencia para nosotros, no dude en compartirla, las críticas tambien nos ayudan a mejorar y brindarle un mejor servicio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, cupiditate, rerum. Porro fuga laudantium tempore! Illum modi natus, reiciendis? Saepe quos id sunt. Iste officiis facilis, velit facere culpa iusto.</p>
               </div>
-              <!-- Subject -->
-              <div class="md-form">
-              <label for="materialContactFormEmail">Asunto</label>
-              <input type="email" id="materialContactForSubject" class="form-control">
-              </div>
-              <!--Message-->
-              <div class="md-form">
-              <label for="materialContactFormMessage">Mensaje</label>
-              <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
-              </div>
-              <!-- Send button -->
-              <button type="button" class="btn btn-light">Enviar Consulta</button>
-        </form>
-</div>        <!-- en of Form -->
-</div>
-    </div>
-  <div class="col-sm-6">
-    <div class="card-body">
-    <div class="mapa-contacto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="map"></div>
+      <div class="container"> 
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.6289807723183!2d-59.0033496854317!3d-27.480807823753736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450ca54bb529ab%3A0xe523e175211a94b9!2sHonduras%201048%2C%20Resistencia%2C%20Chaco!5e0!3m2!1ses!2sar!4v1574897675625!5m2!1ses!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  </div>
-  </div>
-    </div>
-</div>
-</div>
-</div>
+          </div>
+        </div>
+      </div>
 <!--end of contact us-->
+</div>
 <!--footer-->
 <footer>
   <div class="container">
 <div class="card-group">
 <!--Suscribe to the newslater-->
  <div class="col-md-6">
-  <div class="card-deck">
+  <div class="card-footer">
     <div class="aside_newslater">   
           <form>
              <h4 class="newslater">Suscribite al Newslater</h4>
@@ -126,9 +136,9 @@
 <!-- End of subscription -->
 <!-- information about SB Danielle Pomes -->
   <div class="col-md-6">
-    <div class="card-deck">
+    <div class="card-footer">
      <div class="footer-info">    
-            <h6><i class="fas fa-map-marker-alt"></i> Honduras 1048 Rcia. Chaco Argentina</h6>
+            <h6><i class="fas fa-map-marker-alt"></i>Honduras 1048 Rcia. Chaco Argentina</h6>
             <h6><i class="fas fa-at"></i><a href="mailto:consultas.sbdaniellepomes@gmail.com" data-toggle="tooltip" title="¿Dudas?Escribinos">consultas.sbdaniellepomes</a></h6>
         </div>
     </div>
