@@ -3,7 +3,7 @@ body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
 /* General background color*/
-.form-row, footer, .card-body, .card-text, .formulario-contacto, .card, .carousel, .col-lg-6, .card-footer
+.form-row, footer, .card-body, .card-text, .formulario-contacto, .card, .col-lg-6, .card-footer
 {
 	background-color: #d7a9c8; /*magenta*/	
 }
@@ -103,6 +103,7 @@ h2{
 h4, h3, h2, h1, p{ 
 	margin: 5px;	  
 }
+
 /*btn - buttons */
 .btn{
     color:white;
