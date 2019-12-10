@@ -65,16 +65,17 @@ i{
 #telegram{
 	width: 25px;
 }
-#ubicacion{
-	width: 20px;
-}
 #comas{
 	width: 35px;
 	margin: 2px;
 }
+#ubicacion{
+	width: 35px;
+	margin: 3px;
+}
 #email{
-	width: 20px;
-	margin: 2px;
+	width: 35px;
+	margin: 4px;
 }
 #horario{
 	width: 30px;
@@ -289,4 +290,3 @@ body {
 	display: block;
 	margin-bottom: 0px;
 	width: 00%;}
-}
