@@ -3,7 +3,7 @@ body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
 /* General background color*/
-.form-row, footer, .card-body, .card-text, .formulario-contacto, .card, .carousel, .col-lg-6
+.form-row, footer, .card-body, .card-text, .formulario-contacto, .card, .carousel, .col-lg-6, .card-footer
 {
 	background-color: #d7a9c8; /*magenta*/	
 }
@@ -43,12 +43,15 @@ i{
 }
 #whatsapp{	
 	width: 32px;
+	margin: 1px;
 }
 #facebook{
 	width: 32px;
+	margin: 1px;
 }
 #instagram{
 	width: 32px;
+	margin: 1px;
 }
 #facebook:hover{
 	width: 33px;
@@ -90,7 +93,7 @@ i{
 	margin: 4px;
 }
 #menu{
-	width: 40px;
+	width: 35px;
 	margin: 2px;
 }
 /* Titles and text*/
@@ -180,14 +183,21 @@ input, .browser-default, label, .btn{
 	max-width: 300px;
 	margin: 10px;
 }
+/*about us html*/
+.col-lg-6 p{
+	font-size: 19px;
+}
+
 /*Contact us html*/
 /*general and form*/
 .col-lg-6{
 	padding-top: 15px;
+	border-top: solid 10px white;
+	border-bottom: solid 10px white;
+	margin-bottom: 10px;
 }
 .col-lg-6 p{
-	font-variant: small-caps;
-	margin-top: 15px;	
+	margin: 10px;	
 }
 .fa-arrow-alt-circle-right{
 	margin: 5px;
@@ -206,14 +216,6 @@ iframe{
 	width: 100%;
 	max-height: 500px;
 	margin: 0px;
-}
-/*about us html*/
-.card-img-left{
-	width: 300px;
-	height: auto;
-}
-.col-md-6 p{
-	font-size: 19px;
 }
 /* here is the footer*/
 .footer-info a{
