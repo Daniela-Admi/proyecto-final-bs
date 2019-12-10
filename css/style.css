@@ -11,7 +11,6 @@ kbd, .card-up, .btn
 {
 	background-color: #905b74; /*purple*/
 }
-
 /*Header - Navigation bar and logo*/ 
 .navbar-brand{
 	max-width: 300px;
@@ -42,54 +41,57 @@ i{
 	font-size: 28px;
 	color:#c13278; /*shadow pink*/
 }
-.fa-facebook{
+#whatsapp{	
+	width: 32px;
+}
+#facebook{
+	width: 32px;
+}
+#instagram{
+	width: 32px;
+}
+#facebook:hover{
+	width: 33px;
+} 
+#instagram:hover{
+	width: 33px;
+} 
+#whatsapp:hover{
+	width: 33px;
+}
+#telegram{
+	width: 25px;
+}
+#ubicacion{
+	width: 35px;
+}
+#comas{
+	width: 35px;
 	margin: 2px;
-	font-size: 30px;
 }
-
-.fa-instagram{
+#email{
+	width: 35px;
 	margin: 2px;
-	font-size: 30px;
-
 }
-.fa-whatsapp{
+#horario{
+	width: 30px;
 	margin: 2px;
-	font-size: 30px;
-}	
-.fa-facebook:hover{
-	color:#d7a9c8;
-
-  } 
-.fa-instagram:hover{
-	color:#d7a9c8;
-
-  } 
-.fa-whatsapp:hover{
-	color:#d7a9c8;
- }
-.fa-map-marker-alt{
-	font-size: 25px;
-	margin: 8px;
 }
-.fa-at{
-	font-size: 25px;
-	margin: 8px;
+#tarjeta{
+	width: 30px;
+	margin: 2px;
 }
-.fa-calendar-alt{
-	color: white;
-	margin: 5px;
+#manos{
+	width: 30px;
+	margin: 2px;
 }
-.fa-credit-card{
-	color: white;
-	margin: 5px;
-}	
-.fa-handshake{
-	color: white;
-	margin: 5px;
+#cronometro{
+	width: 30px;
+	margin: 4px;
 }
-.fa-telegram-plane{
-	color: white;
-	font-size: 20px;
+#menu{
+	width: 40px;
+	margin: 2px;
 }
 /* Titles and text*/
 h2{
@@ -104,23 +106,21 @@ h4, h3, h2, h1, p{
     border-color: white;
     padding:5px; 
 }
+.btn-success:hover{
+	background-color: #d7a9c8; /*magenta*/
+	border-color: white;
+}
 /*btn at section - publicity into the index */
 .publicidad .btn{
  margin-top: 20px;
 }
 
-/*input textea browser-select label and booton*/
-.browser-default, label, .btn, input{
+/*size of: input, browser-select, label and booton*/
+input, .browser-default, label, .btn{
 	margin: 4px 8px 8px 3px;
 	max-width: 550px;
 	font-variant: small-caps;
 }
-
-.btn-success:hover{
-	background-color: #d7a9c8; /*magenta*/
-	border-color: white;
-}
-
 /*Cards*/
 .card{
 	max-width: 100%;
@@ -140,11 +140,12 @@ h4, h3, h2, h1, p{
 	width: 100% \9;
 	max-height: 550px;
 }
+/*imagenes of testimonial*/
 .avatar img {
   max-width: 250px;
   margin-top: 20px; 
 }
-/*Our services*/
+/*Our services html*/
 .servicios{
 	display:inline-block;
 }
@@ -166,7 +167,7 @@ h4, h3, h2, h1, p{
 .col-sm-4, .col-sm-5{
 	margin-bottom :5px;	
 }
-/*Get an appointment section*/
+/*Get an appointment html*/
 .needs-validation{
 	padding: 15px;
 }
@@ -179,9 +180,17 @@ h4, h3, h2, h1, p{
 	max-width: 300px;
 	margin: 10px;
 }
-/*Contact us section*/
+/*Contact us html*/
+/*general and form*/
 .col-lg-6{
 	padding-top: 15px;
+}
+.col-lg-6 p{
+	font-variant: small-caps;
+	margin-top: 15px;	
+}
+.fa-arrow-alt-circle-right{
+	margin: 5px;
 }
 .md-form {
 	padding: 5px;
@@ -198,12 +207,7 @@ iframe{
 	max-height: 500px;
 	margin: 0px;
 }
-.form-row{
-	max-width: 100%;
-	height: auto;
-	margin: 0;
-}
-/*about us section*/
+/*about us html*/
 .card-img-left{
 	width: 300px;
 	height: auto;
@@ -212,14 +216,12 @@ iframe{
 	font-size: 19px;
 }
 /* here is the footer*/
-/*suscribe to newslater*/
-
-/*info of footer*/
 .footer-info a{
     color: black;
     margin-top: 30px;
     margin-bottom: 13px;
 }
+/*General breackpoint font-size*/
 @include media-breakpoint-up(sm) {
 	font-size: 1.2rem;
 }
@@ -236,83 +238,52 @@ iframe{
 	column-count: 5;
 	font-size: 1.6rem;
 }
-/*print font*/
+/*Print font*/
 @media print {
-  body { font-size: 10pt }
-} 
-
-/*responsive notenook*/
-@media (min-width: 1025px) {
+  body { font-size: 10pt }} 
+/*Responsive full screem*/
+@media (min-width: 1025px){
 /*corousel*/
 .carousel-item{
  	min-width: 800px;
-	max-height: 550px;
-} 
-/*responsive tablet*/
+	max-height: 550px;} 
+/*responsive tablet screem*/
 @media (min-width: 768px) {
-
 /*main index carousel*/
-.carousel-multi-item-2 .col-md-3 {
+.carousel-multi-item-2 .col-md-3{
 	float: left;
 	width: 25%;
-	max-width: 100%;
-} 
+	max-width: 100%;} 
 .carousel-image{
 	margin: 0px; 
-	width: auto;
-}
-.carousel-multi-item-2 .card img {
-	border-radius: 2px; 
-}
+	width: auto;}
+.carousel-multi-item-2 .card img{
+	border-radius: 2px; }
 body {
-	font-size: 1rem;
-}    
+	font-size: 1rem;}    
 }
 /*responsive celphone*/
-@media (min-width: 360px @screen-sm-min)
-{
-h1{ 
-  	font-size: 15px; 
-}
+@media (min-width: 360px @screen-sm-min){
+	h1{ 
+  	font-size: 15px; }
 .col-md-6 p{
-	font-size: 13px;
-}
+	font-size: 13px;}
 }
 /*footer icons*/
 .fa-map-marker-alt{
 	font-size: 20px;
-	margin: 0px;
-}
+	margin: 0px;}
 .fa-at{
 	font-size: 20px;
 	margin: 0px;
-	margin-bottom: 8px;
-}
+	margin-bottom: 8px;}
 .fa-gem{
 	font-size: 24px;
-	margin-right: 0px;
-}
+	margin-right: 0px;}
 .footer{
-	margin-top:0px;
-}
+	margin-top:0px;}
 .aside_newslater .input .btn{
 	display: block;
 	margin-bottom: 0px;
-	width: 00%;
-}
-}
-@media (min-width: 360px @screen-md-min) {
-    margin-left:  (@gutter / -2);
-    margin-right: (@gutter / -2);
-}
-.row {
-    margin-left:  (@gutter / -2);
-    margin-right: (@gutter / -2);
-}
-}
-.make-md-column(@columns; @gutter: @grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
+	width: 00%;}
 }

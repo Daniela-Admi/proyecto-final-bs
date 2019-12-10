@@ -4,11 +4,10 @@
   <title>Turnos/Salud & Belleza/Danielle Pomés</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="pagina de belleza tratamientos esteticos de salud en resistencia chaco argentina">
+  <meta name="description" content="Pagina de Belleza, variedad en tratamientos esteticos en Resistencia Chaco Argentina">
   <meta name="keywords"  content="BELLEZA, SALUD, Danielle Pomés, POMES, ESTETICA, TRATAMIENTOS, BODY-UP, TURNOS, SERVICIO, ELECTRODOS, RADIOFRECUENCIA, CEJAS, pestañas">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -23,7 +22,7 @@
       <nav class="navbar navbar-expand-lg">
        <!--Header logo-->
       <a class="navbar-brand" href="index.html"><img class="img-fluid" src="image/logo.png" alt="Logo no encontrado"></a> 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><img  id="menu" src="svg/menu.svg">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -44,14 +43,14 @@
              <ul id="nav-icons" class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
                   <a href="https://www.facebook.com/S.BDaniellePomes/"target="_blank"> 
-                  <i class="fab fa-facebook"> 
-                  </a></i>
+                  <img id="facebook" src="svg/014-facebook.svg"> 
+                  </a>
                   <a href="https://www.instagram.com/sb.daniellepomes/"target="_blank">
-                  <i class="fab fa-instagram"> 
+                  <img id="instagram" src="svg/instagram.svg"> 
                   </a></i>
                   <a href="https://api.whatsapp.com/send?phone=5493624743621&text=Hola!%20Quiero%20mas%20info%20sobre...">
-                  <i class="fab fa-whatsapp">
-                  </a></i> 
+                  <img id="whatsapp" src="svg/013-whatsapp.svg">
+                  </a> 
                  </li>
             </ul>
         </div>
@@ -64,48 +63,52 @@
 <div class="card-group">
   <div class="col-md-5">
   <div class="card">
-    <div class="info"> 
+    <div class="info">
+<!--payment method and customer service hours--> 
       <h2>Información</h2>
       <hr>
-        <p><i class="fas fa-calendar-alt"></i> Estamos de Lunes a Sábado de 09 a 18hs.</p>
-        <p><i class="far fa-credit-card"></i> Aceptamos todas las tarjetas.</p>
-        <p><i class="fas fa-handshake"></i> Aceptamos Mercado-Pago.</p>
+        <p><img id="horario" src="svg/010-programar.svg"> Estamos de Lunes a Sábado de 09 a 18hs.</p>
+        <p><img id="tarjeta" src="svg/008-tarjeta-de-credito.svg"> Aceptamos todas las tarjetas.</p>
+        <p><img id="manos" src="svg/009-socio.svg"> Aceptamos Mercado-Pago.</p>
         </div>
     </div>
-  </div>
-  <!--end of info card-->
-  <!--make an appointment-->
+    </div> 
+<!--make an appointment-->
    <div class="col-md-5">
     <div class="card">
     <div class="turnos"> 
       <h2> Turnos </h2>
-      <hr>
       <form class="needs-validation" novalidate>
          <div class="form-row">
+          <!--enter name-->
             <label for="validationCustom012">Nombre</label>
             <input type="text" class="form-control" id="validationCustom012" placeholder="First name" value="Nombre"required>
             <div class="valid-feedback">
             </div>
             </div>
          <div class="form-row">
+          <!--enter surname-->
             <label for="validationCustom022">Apellido</label>
             <input type="text" class="form-control" id="validationCustom022" value="Apellido" required>
             <div class="valid-feedback">
             </div>
             </div>
          <div class="form-row">
-            <label for="validationCustom032">Numero de Celular</label>
+          <!--enter celphone number-->
+            <label for="validationCustom032">Número de Celular</label>
             <input type="text" class="form-control" id="validationCustom032" value="+54 xxx xxxxxxx" required>
             <div class="invalid-feedback">
             </div>
          </div>
          <div class="form-row">
-            <label for="validationCustom032">Correo Electronico</label>
+          <!--enter e-mail direction-->
+            <label for="validationCustom032">Correo Electrónico</label>
             <input type="text" class="form-control" id="validationCustom032" value="E-mail" required>
             <div class="invalid-feedback">
           </div>
           </div>
              <div class="form-row">
+          <!--choose an option-->
              <label for="inputMDEx1">Que te gustaria?</label>
              <select class="browser-default custom-select">
             	 <option selected>Desplegar opciones</option>
@@ -141,6 +144,7 @@
       		   </select>
       	     </div>
       		   <div class="form-row">
+              <!--make other chooise of service or skip-->
         	   <select class="browser-default custom-select">
         	     <option selected>Selecciona hasta dos sevicios</option>
         			 <option value="00"> Nada más, Gracias. </option>
@@ -175,20 +179,24 @@
                <option value="29"> Extenciones de pestañas</option>
       			</select>
       		</div>
+          <!--choose day and mouth to the meeting-->
     		    <div class="form-row">
                 <label for="date-picker-example">Elige fecha</label>
                 <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker"value="dd/mm/aa">
             </div>
+            <!--choose hour of the meeting service-->
               	<div class="form-row">
                 <label for="inputMDEx1">Elige horario</label>
                 <input type="time" id="inputMDEx1" class="form-control">
             </div>
+            <!--accept terms-->
                 <div class="form-row">   
                 <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Aceptar Terminos</label>
                 </div>
               </div>
+            <!--check availability-->
               <div class="form-row"> 
                 <button type="button" class="btn btn-light">Comprobar Disponibilidad</button>
             </div>
@@ -221,8 +229,8 @@
   <div class="col-md-6">
     <div class="card-footer">
      <div class="footer-info">    
-            <h6><i class="fas fa-map-marker-alt"></i>Honduras 1048 Rcia. Chaco Argentina</h6>
-            <h6><i class="fas fa-at"></i><a href="mailto:consultas.sbdaniellepomes@gmail.com" data-toggle="tooltip" title="¿Dudas?Escribinos">consultas.sbdaniellepomes</a></h6>
+            <h6><img id="ubicacion" src="svg/003-punto-de-ubicacion.svg">Honduras 1048 Rcia. Chaco Argentina</h6>
+            <h6><img id="email" src="svg/002-email.svg"><a href="mailto:consultas.sbdaniellepomes@gmail.com" data-toggle="tooltip" title="¿Dudas?Escribinos">consultas.sbdaniellepomes</a></h6>
         </div>
     </div>
  </div>

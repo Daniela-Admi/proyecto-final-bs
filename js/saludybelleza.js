@@ -16,3 +16,8 @@ form.classList.add('was-validated');
 });
 }, false);
 })();
+$('.collapse').collapse()
+$('.dropdown-toggle').dropdown();
+$(document).ready(function(){
+  $('.btn').popover({title: "Header", content: "Blabla", container: ".parent"}); 
+});
